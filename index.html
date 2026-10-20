@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Checker (Sets)</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <style>
+        body{text-align: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        h1{color: rgb(0, 88, 204);}
+        #result {
+            border: 5px solid rgb(77, 57, 165);
+            box-shadow: 0px 5px 5px rgb(216, 0, 0); 
+            height: 500px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sir Aljo Club Member Verification System</h1>
+      <form action="">
+         <input type="text" id="first" placeholder="Please enter First Name">
+         <br>
+         <input type="text" id="last" placeholder="Please enter Last Name">
+         <br>
+         <button type="button" py-click="checkers_membershippers">Answer</button>
+    </form>
+    <br>
+
+    <div id="result"></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
