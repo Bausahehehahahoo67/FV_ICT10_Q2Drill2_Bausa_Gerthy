@@ -5,6 +5,7 @@ original_members = {"Gerthy Bruces Bausa", "Jericho Tuvieron Magsalin", "Joaquin
 def checkers_membershippers (e):
     First = document.getElementById("first").value #gets user input on firstname field
     Last = document.getElementById("last").value #gets user input on lastname field
-    Full_name =  Full_name = First + " " + Last #combines values of "First" and "Last" to create fullname
-    members_list = Full_name.join(sorted(original_members)) #Combines "Full_name" and "original_members" to create the final list of members
-    display(members_list, target = "result") #displays via "result" div id
+    Full_name =  Full_name = First + " " + Last #combines values of "First" and "Last" to create fullname. a space is used to create a proper space between the two names
+    original_members + Full_name #combines the original set of members + user's name
+    members_list = f"{'<br>'.join(sorted(original_members))}" #f string, sorts names by alphabetical order
+    document.getElementById("result").innerHTML = members_list #displays via "result" div id. if i used display it would just bunch up like a paragraph, but now it displays like a proper vertical list
